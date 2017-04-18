@@ -29,7 +29,7 @@ ARMテンプレートによるカスタムデプロイリンクで環境構築�
 
 |デプロイ方法|デプロイリンク|
 | --------------- |:---------------:|
-| Direct Portal Deploy | [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2Fkingkino%2Fkokoni-ocr-function%2Fedit%2Fmaster%2FAzureDeploy.json) |
+| Direct Portal Deploy | [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fkingkino%2Fkokoni-ocr-function%2Fmaster%2FAzureDeploy.json) |
 
 
 ## 設定手順
