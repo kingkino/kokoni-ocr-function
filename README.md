@@ -83,6 +83,8 @@ Functionのプラットフォーム機能からアプリケーション設定を
 |SubscriptionKey|Comupter Vision APIのkey|
 |AzureStorageAccount|接続文字列形式(DefaultEndpointsProtocol=https;AccountName=***;AccountKey=***;EndpointSuffix=core.windows.net)|
 
+※[AzureStorageAccount]については既存の[AzureWebJobsDashboard]か[AzureWebJobsStorage]の値をコピーして設定する方法で問題ありません。
+
 追加したら上のほうにある保存ボタンをクリックして保存してください。
 
 
