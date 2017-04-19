@@ -9,14 +9,14 @@
             }
         },
         "Computer_Vision_Name": {
-            "defaultValue": "kokoni-CV",
+            "defaultValue": "CognitiveService-CV",
             "type": "String",
             "metadata": {
                 "description": "Computer Visison API"
             }
         },
         "Translate_Text_Name": {
-            "defaultValue": "kokoni-TT",
+            "defaultValue": "CognitiveService-TT",
             "type": "String",
             "metadata": {
                 "description": "Translate Text API"
