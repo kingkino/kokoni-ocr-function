@@ -36,10 +36,38 @@ ARMテンプレートによるカスタムデプロイリンクで環境構築�
 
 ![参考画像01](https://github.com/kingkino/kokoni-ocr-function/blob/master/refer01.png)
 
+作成したFuntionsを開き新規Functionを作成します。
+ここではWebhook+APIを選択して作成してください。
+
 ![参考画像02](https://github.com/kingkino/kokoni-ocr-function/blob/master/refer02.png)
+
+次にFunctionのリソースをアップロードします。
+アップロードするリソースは「kokoni-ocr-linebot」配下もしくは「kokoni-ocr-translate-linebot」配下のファイルになりますのでCloneなりダウンロードなりしておいてください。
 
 ![参考画像03](https://github.com/kingkino/kokoni-ocr-function/blob/master/refer03.png)
 
+作成したFunctionを選択しファイルの表示からアップロードを選択します。
+対象のファイルを選択してアップロードします。
+同名ファイルは上書きになります。
+アップロードが完了するとproject.json内の設定によりNugetが実行され必要な参照がrestoreされます。
+この時点でログを確認して「Compiled Success」と表示されることを確認してください。
+コンパイルが成功していない場合は手順に誤りがあるかFunctionsが進化して現行ソースが対応しなくなってしまったかのどちらかです。
+
 ![参考画像04](https://github.com/kingkino/kokoni-ocr-function/blob/master/refer04.png)
 
+リソースの配置が完了したら必要なアプリケーション設定を追加します。
+Functionのプラットフォーム機能からアプリケーション設定を開きます。
+
 ![参考画像05](https://github.com/kingkino/kokoni-ocr-function/blob/master/refer05.png)
+
+アプリケーションの設定に下記のKeyValueの組み合わせを追加していきます。
+
+|Key|value|
+| --------------- |:---------------:|
+|ChannelAccessTokenOCR|「kokoni-ocr-linebot」向けに作成したLINE APIのKEYを取得する|
+|ChannelAccessTokenOCRTranslate|「kokoni-ocr-translate-linebot」向けに作成したLINE APIのKEYを取得する|
+|AuthToken|Text Translate APIのkey|
+|SubscriptionKey|Comupter Vision APIのkey|
+|AzureStorageAccount|接続文字列形式(DefaultEndpointsProtocol=https;AccountName=***;AccountKey=***;EndpointSuffix=core.windows.net)|
+
+
