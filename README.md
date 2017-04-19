@@ -22,6 +22,11 @@ AzureFunctionsの環境構築方法は下記を参考にしてください。
 
 [Visual Studioで始めるサーバーレス「Azure Functions」開発入門](http://www.buildinsider.net/pr/microsoft/azure/dictionary06)
 
+Cogtnitive ServiceのKEYの作成方法は下記を参考にしてください。
+
+「Azure Portal で Cognitive Services APIs アカウントを作成する」(https://docs.microsoft.com/ja-jp/azure/cognitive-services/cognitive-services-apis-create-account)
+
+
 ## カスタムデプロイ
 
 ARMテンプレートによるカスタムデプロイリンクで環境構築できるようにしました。
@@ -77,6 +82,8 @@ Functionのプラットフォーム機能からアプリケーション設定を
 |AuthToken|Text Translate APIのkey|
 |SubscriptionKey|Comupter Vision APIのkey|
 |AzureStorageAccount|接続文字列形式(DefaultEndpointsProtocol=https;AccountName=***;AccountKey=***;EndpointSuffix=core.windows.net)|
+
+追加したら上のほうにある保存ボタンをクリックして保存してください。
 
 
 設定が完了したらLINEクライアントから文字を含む画像を投稿して試してみてください。
