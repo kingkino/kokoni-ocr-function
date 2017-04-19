@@ -24,7 +24,7 @@ AzureFunctionsの環境構築方法は下記を参考にしてください。
 
 Cogtnitive ServiceのKEYの作成方法は下記を参考にしてください。
 
-「Azure Portal で Cognitive Services APIs アカウントを作成する」(https://docs.microsoft.com/ja-jp/azure/cognitive-services/cognitive-services-apis-create-account)
+[Azure Portal で Cognitive Services APIs アカウントを作成する](https://docs.microsoft.com/ja-jp/azure/cognitive-services/cognitive-services-apis-create-account)
 
 
 ## カスタムデプロイ
